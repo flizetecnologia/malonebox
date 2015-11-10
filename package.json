@@ -1,0 +1,34 @@
+{
+  "name": "malonebox",
+  "version": "0.1.0",
+  "description": "A simple and fast jQuery lightbox alternative.",
+  "author": "Flize Team <welcome@flize.com.br>",
+  "homepage": "http://flize.com.br",
+  "maintainers": [
+    {
+      "name": "Jefferson Mexkiv",
+      "email": "jefferson@flize.com.br"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mexkiv/malonebox"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-stylus": "^2.1.0",
+    "autoprefixer-stylus": "^0.8.0",
+    "kouto-swiss": "^0.11.13",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.4.2"
+  },
+  "license": "MIT",
+  "keywords": [
+    "malonebox",
+    "lightbox",
+    "modal",
+    "gallery",
+    "image"
+  ]
+}

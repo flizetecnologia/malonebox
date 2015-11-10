@@ -1,0 +1,56 @@
+
+@import "kouto-swiss"
+
+.malonebox__overlay
+  fixed 0px false false 0px
+  size 100% 100%
+  z-index 5000
+  background rgba(0,0,0,0.7)
+  display none
+
+.malonebox__container
+  absolute 0px false false 0px
+  size 100% 100%
+  z-index 5001
+  text-align center
+  display none
+
+.malonebox__opened
+  display block
+
+.malonebox__modal
+  width 100%
+  max-width 800px
+  position relative
+  z-index 5002
+  margin auto
+
+.malonebox__src
+  width 100%
+  max-width 800px
+
+.malonebox__header,
+.malonebox__footer
+  display table
+  size 100% false
+
+.malonebox__title
+  float left
+  color #FFF
+  font-size 14px
+
+.malonebox__close,
+.malonebox__prev,
+.malonebox__next
+  float right
+  color #FFF
+  font-size 12px
+  text-transform uppercase
+  cursor pointer
+  transition color 0.2s linear
+  &:hover
+    color darken(#FFF, 20)
+
+.malonebox__prev
+  float left
+
