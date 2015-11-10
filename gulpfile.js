@@ -27,7 +27,7 @@ gulp.task('css', function() {
 // js tasks
 gulp.task('js', function() {
 	return gulp.src(src + '/js/*.js')
-    .pipe(rename('malone.min.js'))
+    .pipe(rename('malonebox.min.js'))
 		.pipe(uglify())
     .on('error', nocrash)
 		.pipe(gulp.dest(dist + '/js'))
