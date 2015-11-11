@@ -2,7 +2,6 @@
 
   jQuery(document).ready(function(){
 
-    //min-width to run...
     var malonebox = jQuery('.malonebox');
     var init = jQuery('.malonebox-init');
     var minWidth = 480
@@ -70,7 +69,6 @@
     var top = $(document).scrollTop();
     top = top + 100;
 
-    jQuery('.malonebox__modal').css('padding-top', top + 'px');
     jQuery('.malonebox__modal').css('max-width', maxWidth + 'px');
 
     var href = malonebox.attr('href');
