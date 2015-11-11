@@ -60,14 +60,26 @@
   function modalBuild(malonebox, transition) {
 
     var init = jQuery('.malonebox-init');
+    var textClose = 'Fechar [X]';
+    var textPrev = '[<] Anterior';
+    var textNext = 'Próxima [>]';
     var maxWidth = 800;
 
     if(init.length > 0 && init.data('malonebox-max-width')) {
       maxWidth = init.data('malonebox-max-width');
     }
 
-    var top = $(document).scrollTop();
-    top = top + 100;
+    if(init.length > 0 && init.data('malonebox-text-close')) {
+      textClose = init.data('malonebox-text-close');
+    }
+
+    if(init.length > 0 && init.data('malonebox-text-prev')) {
+      textPrev = init.data('malonebox-text-prev');
+    }
+
+    if(init.length > 0 && init.data('malonebox-text-next')) {
+      textNext = init.data('malonebox-text-next');
+    }
 
     jQuery('.malonebox__modal').css('max-width', maxWidth + 'px');
 
@@ -76,18 +88,20 @@
     var item = malonebox.data('item');
     var itens = $('.malonebox').length;
 
+
+
     var prev = parseInt(item) - 1;
     var next = parseInt(item) + 1;
 
-    var header = '<div class="malonebox__title">' + title + '</div><div class="malonebox__close">Fechar [X]</div>';
+    var header = '<div class="malonebox__title">' + title + '</div><div class="malonebox__close">' + textClose + '</div>';
     var image = '<img class="malonebox__src" src="' + href + '" alt="' + title + '"/>';
     var footer = '';
 
     if(prev > 0)
-      footer = footer + '<div class="malonebox__prev" data-item="' + prev + '">[<] Anterior</div>';
+      footer = footer + '<div class="malonebox__prev" data-item="' + prev + '">' + textPrev + '</div>';
 
     if(next <= itens)
-      footer = footer + '<div class="malonebox__next" data-item="' + next + '">Próxima [>]</div>';
+      footer = footer + '<div class="malonebox__next" data-item="' + next + '">' + textNext + '</div>';
 
     jQuery('.malonebox__header').html(header);
     jQuery('.malonebox__image').html(image);
