@@ -3,8 +3,13 @@
   jQuery(document).ready(function(){
 
     //min-width to run...
-    var minWidth = 480
     var malonebox = jQuery('.malonebox');
+    var init = jQuery('.malonebox-init');
+    var minWidth = 480
+
+    if(init.length > 0 && init.data('malonebox-min-to-run')) {
+      minWidth = init.data('malonebox-min-to-run');
+    }
 
     if(malonebox.length == 0 || window.innerWidth < minWidth) {
       console.log('malonebox.js not initialized.');
@@ -55,10 +60,18 @@
 
   function modalBuild(malonebox, transition) {
 
+    var init = jQuery('.malonebox-init');
+    var maxWidth = 800;
+
+    if(init.length > 0 && init.data('malonebox-max-width')) {
+      maxWidth = init.data('malonebox-max-width');
+    }
+
     var top = $(document).scrollTop();
     top = top + 100;
 
     jQuery('.malonebox__modal').css('padding-top', top + 'px');
+    jQuery('.malonebox__modal').css('max-width', maxWidth + 'px');
 
     var href = malonebox.attr('href');
     var title = malonebox.attr('title');
