@@ -1,3 +1,5 @@
+# Malonebox
+
 ## Why use?
 This is simple a lightbox alternative.
 
@@ -17,25 +19,29 @@ In your code:
 
 &lt;!-- declare malonebox -->
 &lt;div class="your-classes">
-    &lt;a class="malonebox" hraf="http://lorempixel.com/800/600/abstract/">[your thumbnail...] &lt;/a>
-    &lt;a class="malonebox" hraf="http://lorempixel.com/800/600/abstract/">[your thumbnail...] &lt;/a>
-	&lt;a class="malonebox" hraf="http://lorempixel.com/800/600/abstract/">[your thumbnail...] &lt;/a>
+    &lt;a class="malonebox" href="http://lorempixel.com/800/600/abstract/">[your thumbnail...] &lt;/a>
+    &lt;a class="malonebox" href="http://lorempixel.com/800/600/abstract/">[your thumbnail...] &lt;/a>
+	&lt;a class="malonebox" href="http://lorempixel.com/800/600/abstract/">[your thumbnail...] &lt;/a>
 &lt;/div>
 
 </pre>
 
 ## Example and options
 
-See options on: [Example File](https://github.com/mexkiv/malonebox/blob/master/example/index.html)
+See options on: [Example File](https://github.com/flizeteam/malonebox/blob/master/example/index.html)
 
 PS: Malonebox auto-initialize with class <code>malonebox</code>.
 
-## Need build?
+## Install
 
 + `bower install malonebox`
 + `npm install malonebox`
 
-PS: Needs [Gulp](http://gulpjs.com/) to run.
+## Version
++ v0.1.3
+
+## Flize Technology
+Check out our website http://flize.technology for more information about company
 
 ## Contributing
-Contributions are welcome. Look our [Issues](https://github.com/mexkiv/malonebox/issues) to help you help us. =)
+Contributions are welcome. Look our [Issues](https://github.com/flizeteam/malonebox/issues) to help you help us. =)

@@ -1,6 +1,6 @@
 {
   "name": "malonebox",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A simple and fast jQuery lightbox alternative.",
   "author": "Flize Team <welcome@flize.com.br>",
   "homepage": "http://flize.com.br",
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mexkiv/malonebox"
+    "url": "https://github.com/flizeteam/malonebox.git"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
